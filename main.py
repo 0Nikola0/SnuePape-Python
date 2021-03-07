@@ -55,7 +55,7 @@ def main():
 
     # Writing the image to disk
     print('Downloading image')
-    with open(img_name, 'wb') as f:
+    with open(f'wallpapers/{img_name}', 'wb') as f:
         f.write(requests.get(img).content)
 
     # Set the image as wallpaper
