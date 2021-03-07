@@ -61,7 +61,7 @@ def main():
     # Set the image as wallpaper
     print('Setting the image as wallpaper')
     cwd = os.getcwd()
-    ctypes.windll.user32.SystemParametersInfoW(20, 0, f"{cwd}/{img_name}" , 0)
+    ctypes.windll.user32.SystemParametersInfoW(20, 0, f"{cwd}/wallpapers/{img_name}" , 0)
     print('Done! \nCheck your desktop')
 
 
