@@ -1,4 +1,14 @@
 # How it works
-First the script scrapes the today's top page of the selected page.
-Then after it has found the most upvoted page for the day, it opens it and gets the link where the image is hosted (so the original quality can be preserved)
-After that it downloads the image in the wallpapers folder. And then finally sets the downloaded image as your wallpaper.
+First the script sends a request to reddit to get the top posts for selected subreddit.
+After it gets the response it parses it and extracts the neccessary data from it.
+Next it downloads the image in it's original format and then finally sets it as your wallpaper
+
+## How to run it
+First you need to install the neccessary packages
+```
+python -m pip install -r requirements.txt
+```
+After you've installed them, just run the script like any other
+```
+python main.py
+```
